@@ -27,14 +27,14 @@ import {
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 import { Textarea } from "@/components/ui/textarea";
-// import GeneratePodcast from "@/components/GeneratePodcast"
-// import GenerateThumbnail from "@/components/GenerateThumbnail"
 import { Loader } from "lucide-react";
 import { Id } from "@/convex/_generated/dataModel";
-import { useToast } from "@/components/ui/use-toast";
 import { useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { useRouter } from "next/navigation";
+import GeneratePodcast from "@/components/GeneratePodcast";
+import GenerateThumbnail from "@/components/GenerateThumbnail";
+import { useToast } from "@/hooks/use-toast";
 
 const voiceCategories = ["alloy", "shimmer", "nova", "echo", "fable", "onyx"];
 
@@ -199,23 +199,18 @@ const CreatePodcast = () => {
             />
           </div>
           <div className="flex flex-col pt-10">
-            {/* <GeneratePodcast
-                setAudioStorageId={setAudioStorageId}
-                setAudio={setAudioUrl}
-                voiceType={voiceType!}
-                audio={audioUrl}
-                voicePrompt={voicePrompt}
-                setVoicePrompt={setVoicePrompt}
-                setAudioDuration={setAudioDuration}
-              /> */}
+            <GeneratePodcast
+              setAudioStorageId={setAudioStorageId}
+              setAudio={setAudioUrl}
+              voiceType={voiceType!}
+              audio={audioUrl}
+              voicePrompt={voicePrompt}
+              setVoicePrompt={setVoicePrompt}
+              setAudioDuration={setAudioDuration}
+            />
 
-            {/* <GenerateThumbnail
-               setImage={setImageUrl}
-               setImageStorageId={setImageStorageId}
-               image={imageUrl}
-               imagePrompt={imagePrompt}
-               setImagePrompt={setImagePrompt}
-              /> */}
+            <GenerateThumbnail 
+            />
 
             <div className="mt-10 w-full">
               <Button
