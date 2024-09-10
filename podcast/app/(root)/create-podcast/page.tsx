@@ -209,7 +209,7 @@ const CreatePodcast = () => {
               setAudioDuration={setAudioDuration}
             />
 
-            <GenerateThumbnail 
+            <GenerateThumbnail
             />
 
             <div className="mt-10 w-full">
