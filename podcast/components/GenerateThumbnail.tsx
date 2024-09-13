@@ -53,7 +53,7 @@ const GenerateThumbnail = ({
       toast({ title: "Error generating thumbnail", variant: "destructive" });
     }
   };
-
+ 
   const generateImage = async () => {
     try {
       const response = await handleGenerateThumbnail({ prompt: imagePrompt });
@@ -79,7 +79,8 @@ const GenerateThumbnail = ({
       toast({ title: "Error uploading image", variant: "destructive" });
     }
   };
-
+  console.log('');
+  
   return (
     <>
       <div className="generate_thumbnail">
