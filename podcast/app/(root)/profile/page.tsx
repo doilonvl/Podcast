@@ -2,7 +2,11 @@ import React from 'react'
 
 const Profile = () => {
   return (
-    <div>page</div>
+    <section className="mt-9 flex flex-col">
+      <h1 className="text-20 font-bold text-white-1 max-md:text-center">
+        Podcaster Profile
+      </h1>
+    </section>
   )
 }
 
