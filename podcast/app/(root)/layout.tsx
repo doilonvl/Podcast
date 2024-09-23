@@ -25,7 +25,7 @@ export default function RootLayout({
               <MobileNav />
             </div>
             <div className="flex flex-col md:pb-14">
-              Toaster
+              Toaster 2
               {children}
             </div>
           </div>
