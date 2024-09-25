@@ -10,7 +10,7 @@ const EmblaCarousel = ({ fansLikeDetail }: CarouselProps) => {
 
   return (
     <section className="flex w-full flex-col gap-4 overflow-hidden">
-      <div className="flex"></div>
+      <div className="flex">abc</div>
       <div className="flex justify-center gap-2"></div>
     </section>
   );
